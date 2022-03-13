@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#int-outline{
+    background-image: url(./homesc2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+nav{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+.logo a, .login a{
+    text-decoration: none;
+}
+.logo h2{
+    font-family: Rajdhani, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.login h5{
+    font-family: Rajdhani, sans-serif;
+    color: white;
+}
+.jumbo{
+    width: 100%;
+    height: 85.2%;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(4px);
+}
+.jumbo h1{
+    font-family: cedarville cursive, sans-serif;
+    font-weight: bolder;
+    font-size: 3.1rem;
+    position: relative;
+    margin-right: 20%;
+}
+footer{
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #14131a;
+}
+footer p{
+    color: white;
+    text-align: center;
+    
+}
+/* SMALL SCREEN DEVICES ---- MOBILES */
+@media(max-width: 575px){
+    #int-outline{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    nav{
+        padding: 4%;
+    }
+    .login h5{
+        font-size: 15px;
+    }
+    .jumbo h1{
+        font-size: 2.4rem;
+        color: violet;
+        margin-left: 10%;
+    }
+}
+/* MEDIUM SCREEN DEVICES ---- TABLETS, IPADS */
+@media(min-width: 576px) and (max-width: 992px){
+    #int-outline{
+        background-size: 100% 100%;
+    }
+    .jumbo h1{
+        font-size: 2.7rem;
+        margin-left: 10%;
+        color: red;
+    }
+}
+/* LARGE SCREEN DIVICES ---- LAPTOPS, DESKTOPS */
+@media(min-width: 1400px){
+    .logo h2{
+        font-size: 2.5rem;
+    }
+    .login h5{
+        font-size: 1.7rem;
+    }
+    .jumbo h1{
+        font-size: 3.5rem;
+    }
+}
